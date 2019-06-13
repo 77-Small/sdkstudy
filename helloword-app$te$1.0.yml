@@ -1,0 +1,26 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    platform: mysql                        # 指定数据源类型
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/xxx?useSSL=false
+    username: xxx
+    password: xxxx
+    maxActive: 90
+    maxIdle: 60
+    minIdle: 30
+    initialSize: 30
+    testWhileIdle: true
+    removeAbandoned: true
+    logAbandoned: true 
+  mvc:
+    throw-exception-if-no-handler-found: true
+    static-path-pattern: /static/**
+  resources:
+    add-mappings: false
+  cloud:
+    bus:
+     enabled: false
+ctgmq:    #MQ配置
+  enable: false
