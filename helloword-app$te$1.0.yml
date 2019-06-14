@@ -4,7 +4,7 @@ spring:
   datasource:
     platform: mysql                        # 指定数据源类型
     driverClassName: com.mysql.jdbc.Driver
-    url: jdbc:mysql://rm-qdrtestdataww.mysql.rds.aliyuncs.com:3306/qidarenweb?useSSL=false
+    url: jdbc:mysql://rm-qdrtestdataww.mysql.rds.aliyuncs.com:3306/testqdradmin?useUnicode=true&allowMultiQueries=true&autoReconnect=true&useSSL=false&useUnicode=true&characterEncoding=utf-8
     username: root
     password: IELW1uE09Kbp4tVfj9Vo
     maxActive: 90
