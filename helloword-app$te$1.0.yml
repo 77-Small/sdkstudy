@@ -27,3 +27,4 @@ ctgmq:    #MQ配置
   #mybatis
 mybatis:
   configLocation: classpath:mybatis-config.xml
+  mapper-locations: classpath:mapper/*.xml
