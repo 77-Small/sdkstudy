@@ -4,9 +4,9 @@ spring:
   datasource:
     platform: mysql                        # 指定数据源类型
     driverClassName: com.mysql.jdbc.Driver
-    url: jdbc:mysql://127.0.0.1:3306/xxx?useSSL=false
-    username: xxx
-    password: xxxx
+    url: jdbc:mysql://rm-qdrtestdataww.mysql.rds.aliyuncs.com:3306/xxx?useSSL=false
+    username: root
+    password: IELW1uE09Kbp4tVfj9Vo
     maxActive: 90
     maxIdle: 60
     minIdle: 30
@@ -24,3 +24,9 @@ spring:
      enabled: false
 ctgmq:    #MQ配置
   enable: false
+  #mybatis
+mybatis:
+  configLocation: classpath:mybatis-config.xml
+logging:
+  level:
+    com.shtel.ywrhcenter.managedata.modules.product.mapper : debug #启用sql日志
