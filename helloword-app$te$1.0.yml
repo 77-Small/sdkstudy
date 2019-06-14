@@ -26,7 +26,4 @@ ctgmq:    #MQ配置
   enable: false
   #mybatis
 mybatis:
-  configLocation: classpath:mybatis-config.xml
-logging:
-  level:
-    com.shtel.ywrhcenter.managedata.modules.product.mapper : debug #启用sql日志
+  mapper-locations: classpath:mapper/*.xml
